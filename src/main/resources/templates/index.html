@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Student Form</title>
+</head>
+<body>
+    <h2>Enter Student Details</h2>
+    <form th:action="@{/save}" method="post">
+        Roll Number: <input type="number" name="rollNumber" required><br><br>
+        Name: <input type="text" name="name" required><br><br>
+        <button type="submit">Save</button>
+    </form>
+    <br>
+    <a th:href="@{/show}">View All Students</a>
+</body>
+</html>
